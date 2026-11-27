@@ -100,8 +100,6 @@ Sur le même projet, j'ai automatisé le parcours de devis dans HubSpot : un
 devis en quatre étapes crée la transaction et un devis brouillon par
 formation, le commercial n'a plus qu'à relire et envoyer.
 
-J'habite à Tourcoing, à côté de Lille.
-
 ## Ce que je n'ai pas encore fait
 
 Je préfère le dire ici plutôt qu'en entretien : je n'ai pas encore mis
