@@ -1,0 +1,39 @@
+{
+  "site": "gosto",
+  "origin": "https://www.gosto.com",
+  "sitemap": "https://www.gosto.com/sitemap.xml",
+  "templates": [
+    {
+      "template": "product",
+      "pattern": "^/(?<id>\\d+)-(?<slug>[^/]+)\\.html$"
+    },
+    {
+      "template": "product",
+      "pattern": "^/[^/]+/(?<id>\\d+)-(?<slug>[^/]+)\\.html$"
+    },
+    {
+      "template": "category",
+      "pattern": "^/(?<id>\\d+)-(?<slug>[^/.]+)$"
+    },
+    {
+      "template": "cms",
+      "pattern": "^/content/(?<id>\\d+)-(?<slug>[^/]+)$"
+    },
+    {
+      "template": "article",
+      "pattern": "^/cms/(?<id>\\d+)/(?<slug>[^/]+)$"
+    }
+  ],
+  "scheme": {
+    "product": "/fr/products/{slug}",
+    "category": "/fr/categories/{slug}",
+    "cms": "/fr/{slug}",
+    "article": "/fr/blog/{slug}"
+  },
+  "overrides": {
+    "/fr/": "/fr",
+    "/nous-contacter": "/fr/contact",
+    "/plan-site": "/fr/plan-du-site",
+    "/1__negodev": "gone"
+  }
+}

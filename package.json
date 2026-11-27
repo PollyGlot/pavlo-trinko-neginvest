@@ -1,0 +1,17 @@
+{
+  "name": "prestashop-medusa-migration",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "fetch": "node bin/migration.mjs fetch",
+    "baseline": "node bin/migration.mjs baseline",
+    "audit": "node bin/migration.mjs audit",
+    "plan": "node bin/migration.mjs plan",
+    "collisions": "node bin/migration.mjs collisions manulevage gosto panostock",
+    "gate": "node bin/migration.mjs gate"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "site": "panostock",
+  "origin": "https://www.panostock.fr",
+  "sitemap": "https://www.panostock.fr/sitemap-fr-with-images.xml",
+  "templates": [
+    {
+      "template": "product",
+      "pattern": "^/(?<id>\\d+)-(?<slug>[^/]+)\\.html$"
+    },
+    {
+      "template": "product",
+      "pattern": "^/[^/]+/(?<id>\\d+)-(?<slug>[^/]+)\\.html$"
+    },
+    {
+      "template": "category",
+      "pattern": "^/(?<id>\\d+)-(?<slug>[^/.]+)$"
+    },
+    {
+      "template": "cms",
+      "pattern": "^/content/(?<id>\\d+)-(?<slug>[^/]+)$"
+    }
+  ],
+  "scheme": {
+    "product": "/fr/products/{slug}",
+    "category": "/fr/categories/{slug}",
+    "cms": "/fr/{slug}"
+  },
+  "overrides": {
+    "/sitemap": "/fr/plan-du-site"
+  }
+}

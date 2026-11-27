@@ -1,0 +1,30 @@
+{
+  "site": "manulevage",
+  "origin": "https://www.manulevage.fr",
+  "sitemap": "https://www.manulevage.fr/sitemap-fr.xml",
+  "templates": [
+    {
+      "template": "product",
+      "pattern": "^/(?<slug>.+)-p-(?<id>\\d+)\\.html$"
+    },
+    {
+      "template": "category",
+      "pattern": "^/(?<slug>.+)-c-(?<id>\\d+)\\.html$"
+    },
+    {
+      "template": "cms",
+      "pattern": "^/(?<slug>.+)-p\\.html$"
+    }
+  ],
+  "scheme": {
+    "product": "/fr/products/{slug}",
+    "category": "/fr/categories/{slug}",
+    "cms": "/fr/{slug}"
+  },
+  "overrides": {
+    "/contact_us": "/fr/contact",
+    "/plan-de-site": "/fr/plan-du-site",
+    "/page-introuvable": "gone",
+    "/prod335-p-335.html": "gone"
+  }
+}

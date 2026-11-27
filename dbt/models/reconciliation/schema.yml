@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: rec_catalogue_prestashop_medusa
+    description: >
+      Un produit actif PrestaShop par ligne, avec son état dans Medusa.
+      Hypothèse : les sources `prestashop` et `medusa` sont répliquées dans
+      Snowflake, et le produit Medusa garde `metadata.prestashop_id`.
+    columns:
+      - name: etat
+        tests:
+          - accepted_values:
+              name: aucun_produit_manquant
+              values: ["en_ligne"]
+              config:
+                severity: error
+                where: "prestashop_id not in (select prestashop_id from {{ ref('exceptions_reconciliation') }})"
+
