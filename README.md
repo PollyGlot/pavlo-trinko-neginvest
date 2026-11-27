@@ -100,13 +100,6 @@ Sur le même projet, j'ai automatisé le parcours de devis dans HubSpot : un
 devis en quatre étapes crée la transaction et un devis brouillon par
 formation, le commercial n'a plus qu'à relire et envoyer.
 
-## Ce que je n'ai pas encore fait
-
-Je préfère le dire ici plutôt qu'en entretien : je n'ai pas encore mis
-Medusa en production, je n'ai pas travaillé sur Snowflake ni sur un projet
-dbt d'équipe, et je n'ai jamais raccordé de PunchOut. Le modèle dbt de ce
-dépôt n'a tourné sur aucun warehouse.
-
 ## Mes autres dépôts publics
 
 - [google-play-cli](https://github.com/PollyGlot/google-play-cli) :
